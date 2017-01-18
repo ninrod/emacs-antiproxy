@@ -1,67 +1,67 @@
 * Setting up emacs behind a draconian corporate firewall
 
-* Using Spacemacs elpa mirror
-** setup
+** Using Spacemacs elpa mirror
+*** setup
 
- 1. git clone [[https://github.com/syl20bnr/spacemacs-elpa-mirror][spacemacs' elpa mirror]] or just put the repo inside an usb stick and place the repo in the =~/.emacs.d/mirror-elpa= folder.
- 2. place the provided =init.el= file in =~/.emacs.d=.
- 3. use the timeless and infinitely powerful editor at will.
+  1. git clone [[https://github.com/syl20bnr/spacemacs-elpa-mirror][spacemacs' elpa mirror]] or just put the repo inside an usb stick and place the repo in the =~/.emacs.d/mirror-elpa= folder.
+  2. place the provided =init.el= file in =~/.emacs.d=.
+  3. use the timeless and infinitely powerful editor at will.
 
-** init.el
-   #+BEGIN_SRC emacs-lisp
-     (require 'package)
+*** init.el
+    #+BEGIN_SRC emacs-lisp
+      (require 'package)
 
-     (setq package-enable-at-startup nil)
-     (setq package-archives '(("melpa" . "~/.emacs.d/mirror-elpa/melpa/")
-                              ("org"   . "~/.emacs.d/mirror-elpa/org/")
-                              ("gnu"   . "~/.emacs.d/mirror-elpa/gnu/")))
-     (package-initialize)
+      (setq package-enable-at-startup nil)
+      (setq package-archives '(("melpa" . "~/.emacs.d/mirror-elpa/melpa/")
+                               ("org"   . "~/.emacs.d/mirror-elpa/org/")
+                               ("gnu"   . "~/.emacs.d/mirror-elpa/gnu/")))
+      (package-initialize)
 
-     (unless (package-installed-p 'use-package) ; Bootstrap John Wigley's `use-package'
-       (package-refresh-contents)
-       (package-install 'use-package))
+      (unless (package-installed-p 'use-package) ; Bootstrap John Wigley's `use-package'
+        (package-refresh-contents)
+        (package-install 'use-package))
 
-     (use-package evil ; this will install evil mode even without an internet connection.
-       :ensure t
-       :config
-       (evil-mode))
-   #+END_SRC
+      (use-package evil ; this will install evil mode even without an internet connection.
+        :ensure t
+        :config
+        (evil-mode))
+    #+END_SRC
 
-** advantages
+*** advantages
 
-   - You now have unlimited access to all of [[http://melpa.org][melpa]], [[http://elpa.gnu.org][elpa]] and [[http://orgmode.org/][orgmode]] without having to send/receive a single network packet.
-   - this also means that instead of taking minutes do download your 100+ packages, it now takes nanoseconds.
+    - You now have unlimited access to all of [[http://melpa.org][melpa]], [[http://elpa.gnu.org][elpa]] and [[http://orgmode.org/][orgmode]] without having to send/receive a single network packet.
+    - this also means that instead of taking minutes do download your 100+ packages, it now takes nanoseconds.
 
-** disadvantages
+*** disadvantages
 
-   - You have to rely on @[[http://github.com/d12frosted][d12frosted]] to manually update the whole mirror. But he does a very good job at it.
+    - You have to rely on @[[http://github.com/d12frosted][d12frosted]] to manually update the whole mirror. But he does a very good job at it.
 
-* Using Redguardtoo's elpa-mirror
-** setup
-   1. generate your thin-mirror out of your ~/.emacs.d/elpa folder using [[https://github.com/redguardtoo/][@redguartoo's]] [[https://github.com/redguardtoo/elpa-mirror][elpa-mirror]] =elpamr-create-mirror-for-installed= command.
-   2. move this thin generated mirror to =~/.emacs.d/thin-elpa-mirror/=
-** init.el
+** Using Redguardtoo's elpa-mirror
+*** setup
+    1. generate your thin-mirror out of your ~/.emacs.d/elpa folder using [[https://github.com/redguardtoo/][@redguartoo's]] [[https://github.com/redguardtoo/elpa-mirror][elpa-mirror]] =elpamr-create-mirror-for-installed= command.
+    2. move this thin generated mirror to =~/.emacs.d/thin-elpa-mirror/=
+*** init.el
 
-   #+BEGIN_SRC emacs-lisp
-     (require 'package)
-     (setq package-enable-at-startup nil)
-     (setq package-archives '(("melpa" . "~/.emacs.d/thin-elpa-mirror/")))
-     (package-initialize)
+    #+BEGIN_SRC emacs-lisp
+      (require 'package)
+      (setq package-enable-at-startup nil)
+      (setq package-archives '(("melpa" . "~/.emacs.d/thin-elpa-mirror/")))
+      (package-initialize)
 
-     (unless (package-installed-p 'use-package) ; Bootstrap John Wigley's `use-package'
-       (package-refresh-contents)
-       (package-install 'use-package))
+      (unless (package-installed-p 'use-package) ; Bootstrap John Wigley's `use-package'
+        (package-refresh-contents)
+        (package-install 'use-package))
 
-     (use-package evil ; this will install evil mode even without an internet connection.
-       :ensure t
-       :config
-       (evil-mode))
-   #+END_SRC
+      (use-package evil ; this will install evil mode even without an internet connection.
+        :ensure t
+        :config
+        (evil-mode))
+    #+END_SRC
 
-** advantages
+*** advantages
 
-- The advantage is that you don't have to wait for @[[http://github.com/d12frosted][d12frosted]] to update the spacemacs mirror.
+ - The advantage is that you don't have to wait for @[[http://github.com/d12frosted][d12frosted]] to update the spacemacs mirror.
 
-** disadvantage
+*** disadvantage
 
-- The disadvantage is that you are confined to the packages that you use.
+ - The disadvantage is that you are confined to the packages that you use.
