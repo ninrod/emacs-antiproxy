@@ -1,4 +1,4 @@
-* Setting up emacs behind a draconian corporate firewall
+* Setting up emacs behind a draconian corporate firewall or proxy or both
   - =important note:= do check upfront if these procedures are ok within your company's security policies.
 
 ** Using Spacemacs elpa mirror
