@@ -1,4 +1,5 @@
 * Setting up emacs behind a draconian corporate firewall
+  - =important note:= do check upfront if these procedures are ok within your company's security policies.
 
 ** Using Spacemacs elpa mirror
 *** setup
