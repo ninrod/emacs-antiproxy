@@ -65,7 +65,7 @@
 
 *** disadvantage
 
- - The disadvantage is that you are confined to the packages that you use.
+ - The disadvantage is that you are confined to the packages that you use, e.g., you can't try out new packages.
 
 * LICENSE
 
