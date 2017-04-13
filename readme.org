@@ -61,7 +61,7 @@
 
 *** advantages
 
- - The advantage is that you don't have to wait for @[[http://github.com/d12frosted][d12frosted]] to update the spacemacs mirror.
+ - The advantage is that you don't have to wait for @[[http://github.com/d12frosted][d12frosted]] to update his mirror.
 
 *** disadvantage
 
