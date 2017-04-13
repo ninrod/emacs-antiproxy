@@ -4,7 +4,7 @@
 ** Using Spacemacs elpa mirror
 *** setup
 
-  1. git clone [[https://github.com/syl20bnr/spacemacs-elpa-mirror][spacemacs' elpa mirror]] or just put the repo inside an usb stick and place the repo in the =~/.emacs.d/mirror-elpa= folder.
+  1. git clone [[https://github.com/d12frosted/elpa-mirror][d12frosted' elpa mirror]] or just put the repo inside an usb stick and place the repo in the =~/.emacs.d/mirror-elpa= folder.
   2. place the provided =init.el= file in =~/.emacs.d=.
   3. use the timeless and infinitely powerful editor at will.
 
