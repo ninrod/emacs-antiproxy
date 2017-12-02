@@ -1,7 +1,10 @@
-* Setting up emacs behind a draconian corporate firewall or proxy or both
-  - =important note:= do check upfront if these procedures are ok within your company's security policies.
+* Setting up emacs with a local MELPA
 
-** Using d12frosted elpa mirror
+- =important note:= do check upfront if these procedures are ok within your company's security policies.
+- This is very useful when you are behind a draconian corporate firewall or proxy or even in a situation where you have
+no internet connection and want to hack in emacs and want to tweak your configuration.
+
+** option 1) @d12frosted elpa mirror
 *** setup
 
   1. git clone [[https://github.com/d12frosted/elpa-mirror][d12frosted' elpa mirror]] or just put the repo inside an usb stick and place the repo in the =~/.emacs.d/mirror-elpa= folder.
@@ -37,7 +40,7 @@
 
     - You have to rely on @[[http://github.com/d12frosted][d12frosted]] to manually update the whole mirror. But he does a very good job at it.
 
-** Using Redguardtoo's elpa-mirror
+** option 2) Redguardtoo's elpa-mirror
 *** setup
     1. generate your thin-mirror out of your ~/.emacs.d/elpa folder using [[https://github.com/redguardtoo/][@redguartoo's]] [[https://github.com/redguardtoo/elpa-mirror][elpa-mirror]] =elpamr-create-mirror-for-installed= command.
     2. move this thin generated mirror to =~/.emacs.d/thin-elpa-mirror/=
