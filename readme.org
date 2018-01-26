@@ -1,7 +1,7 @@
 * Setting up emacs with a local MELPA
 
 - =important note:= do check upfront if these procedures are ok within your company's security policies.
-- This is very useful when you are behind a draconian corporate firewall or proxy or even in a situation where you have
+- This is very useful when you are behind a corporate firewall or a slow proxy or even in a situation where you have
 no internet connection and want to hack in emacs and want to tweak your configuration.
 
 ** option 1) @d12frosted elpa mirror
