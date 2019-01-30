@@ -9,7 +9,9 @@ no internet connection and want to hack in emacs and want to tweak your configur
 
   1. git clone [[https://github.com/d12frosted/elpa-mirror][d12frosted' elpa mirror]] or just put the repo inside an usb stick and place the repo in the =~/.emacs.d/mirror-elpa= folder (use the `--depth 1` option to grab just the last commit):
   
-    git clone --depth 1 https://github.com/d12frosted/elpa-mirror.git  
+```sh  
+git clone --depth 1 https://github.com/d12frosted/elpa-mirror.git  
+```
   
   2. place the provided =init.el= file in =~/.emacs.d=.
   3. use the timeless and infinitely powerful editor at will.
